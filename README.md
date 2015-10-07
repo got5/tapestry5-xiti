@@ -21,11 +21,12 @@ The module provides a way to add the Xiti stack (xtcore.js and tapestry-xiti.js)
 #### Module Settings ####
 
 Set the module parameters provided by Xiti in your AppModule : 
-- XitiConstants.XITI_XTCORE_JS_PATH : _xtcore.js_ path of your webapp 
-- XitiConstants.XT_SITE : _xt\_site_ your site identifier (provided by Xiti)
+- XitiConstants.XITI_XTCORE_JS_PATH : _xtcore.js_ path (script provided by Xiti) 
+- XitiConstants.XT_SITE : _xt\_site_ your site's identifier (provided by Xiti)
 - XitiConstants.XT_SD : _xt\_sd_ the Xiti sub-domain (provided by Xiti)
 - XITI_ENABLE_SCRIPT_AUTOLOAD : enable/disable Xiti script auto-load. By defaut, true : the script is loaded for all pages (annotated or not  with @Xiti annotation). If you set it to false, only annotated pages will load the Xiti script 
  
+ For instance, if you put the _xtcore.js_ in _src/main/webapp/static/js_ : 
 
 	@Contribute(SymbolProvider.class)
 	@ApplicationDefaults
@@ -54,7 +55,7 @@ Note : Some Xiti parameters (_xt\_site_, _xt\_sd_ and _xt\_nv_) can be overridde
 
 #### Xiti annotation  ####
 
-The _@Xiti_ annotation allows you to set or override Xiti parameters.
+The _@Xiti_ annotation allows you to set or override Xiti parameters.  
 
 Note that, by default, all pages load the Xiti script, even those without annotation @Xiti.
 
@@ -65,7 +66,7 @@ Note that, by default, all pages load the Xiti script, even those without annota
     ...
     }
 
-In this sample, the _@Xiti_ annotation is used to set a number of Xiti variables (which values are provided by Xiti) and records the page view with label "SubscribeView"
+In this sample, the _@Xiti_ annotation is used to set a number of Xiti variables (which values are provided by Xiti) and records the page view with label "SubscribeView" 
 
 Note : Some global parameters (as _xt\_site_ and _xt\_sd_) can be set on an application level in the AppModule (See "Module settings" section)
 
@@ -111,7 +112,7 @@ in SomePage.tml
         ...
     </html>
 
-Here, the form submit will be recorded as a Xiti hit with label "subscribe" and level 5.
+Here, the form submit will be recorded as a Xiti hit with label "subscribe" and level 5. 
 
 Note that you can also record a form submit in an ajax context.
 
