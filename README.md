@@ -34,6 +34,7 @@ Set the module parameters provided by Xiti in your AppModule :
 		 	 * If xtcore.js is under src/main/webapp/static/js, should be something like "context:static/js/xtcore.js"
 			 * */
 			configuration.add(XitiConstants.XITI_XTCORE_JS_PATH, "context:static/js/xtcore.js"); 
+			
 			/**
 		 	 * Set mandatory "xtsite" param (provided by Xiti) for the whole application
 		 	 * This value can be overridden as an Application defaults configuration or as a @Xiti annotation attribute
