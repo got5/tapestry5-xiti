@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 import org.apache.tapestry5.ioc.annotations.UseWith;
 
 /**
-* This annotation can be used to tack a page or a method
+* This annotation can be used to track a page
 *
 */
 @Target({ElementType.TYPE, ElementType.METHOD})
