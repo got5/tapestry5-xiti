@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="tapestry-xiti Application Test Suite" annotations="1.5" verbose="2">
+	<test name="Unit Tests" enabled="true">
+		<parameter name="tapestry.web-app-folder" value="src/test/webapp"/>
+		
+		<packages>
+			<package name="org.got5.tapestry5.xiti.test" />
+		</packages>
+	
+	</test>
+</suite>

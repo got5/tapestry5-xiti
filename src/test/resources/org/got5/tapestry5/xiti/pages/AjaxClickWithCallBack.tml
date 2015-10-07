@@ -1,0 +1,10 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+				xmlns:p="tapestry:parameter">
+<head></head>
+<body>	
+	<p><t:ActionLink t:id="ajaxClickWithJsCallback" t:mixins="xiti/xtclick" t:label="myXitiAjaxClickWithJsCallback" t:level="62" t:custom="{param1:'value1'}" t:zone="myZone"> xiti ajax click with js callback</t:ActionLink></p>
+	<span id="spanMessage"></span>
+	
+	<t:zone t:id="myZone" />
+</body>		
+</html>

@@ -1,0 +1,12 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+				xmlns:p="tapestry:parameter">
+<head></head>
+<body>		
+	${message}
+	
+	<t:form t:id="myForm" t:mixins="xiti/xtform" t:label="myXitiFormlabel" t:level="89" t:custom="{param1:'value1'}">
+		<p>Name : <t:textfield t:id="name" t:value="text" t:validate="required"/></p>
+		<t:submit/>
+	</t:form>
+</body>	
+</html>

@@ -1,0 +1,12 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+				xmlns:p="tapestry:parameter">
+<head></head>
+<body>		
+	<p><t:ActionLink t:id="ajaxSimpleClick" t:mixins="xiti/xtclick" t:label="myXitiSimpleAjaxLabel" t:level="45" t:custom="{param1:'value1'}" t:zone="myZone">Xiti simple ajax click</t:ActionLink></p>
+	
+	<t:zone t:id="myZone">
+		${ajaxMessage}
+	</t:zone>
+</body>	
+	
+</html>

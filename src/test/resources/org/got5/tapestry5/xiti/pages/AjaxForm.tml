@@ -1,0 +1,14 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+				xmlns:p="tapestry:parameter">
+<head></head>
+<body>		
+	<t:zone t:id="myZone">
+		${ajaxMessage}
+	</t:zone>
+	
+	<t:form t:id="myAjaxForm" t:mixins="xiti/xtform" t:label="myXitiAjaxFormlabel" t:level="22" t:custom="{param1:'value1'}" t:zone="myZone">
+		<p>Name : <t:textfield t:id="name" t:value="text" t:validate="required"/></p>
+		<t:submit/>
+	</t:form>
+</body>	
+</html>

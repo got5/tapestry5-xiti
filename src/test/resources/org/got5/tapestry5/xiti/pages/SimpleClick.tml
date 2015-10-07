@@ -1,0 +1,9 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+				xmlns:p="tapestry:parameter">
+<head></head>
+<body>	
+	${message}
+	
+	<p><t:ActionLink t:id="click" t:mixins="xiti/xtclick" t:label="myXitiLabel" t:level="32" t:custom="{param1:'value1'}" >Xiti click</t:ActionLink></p>
+</body>
+</html>
