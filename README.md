@@ -29,24 +29,23 @@ Set the module parameters provided by Xiti in your AppModule :
 		@Contribute(SymbolProvider.class)
 		@ApplicationDefaults
 		public static void contributeSymboleProvider(MappedConfiguration<String, String> configuration){
-    		/**
-    		 * Set the xtcore.js path. 
-    		 * If xtcore.js is under src/main/webapp/static/js, should be something like "context:static/js/xtcore.js"
-    		 * */
-    		configuration.add(XitiConstants.XITI_XTCORE_JS_PATH, "context:static/js/xtcore.js"); 
+			/**
+		 	 * Set the xtcore.js path.
+		 	 * If xtcore.js is under src/main/webapp/static/js, should be something like "context:static/js/xtcore.js"
+			 * */
+			configuration.add(XitiConstants.XITI_XTCORE_JS_PATH, "context:static/js/xtcore.js"); 
+			/**
+		 	 * Set mandatory "xtsite" param (provided by Xiti) for the whole application
+		 	 * This value can be overridden as an Application defaults configuration or as a @Xiti annotation attribute
+		 	* */  
+			configuration.add(XitiConstants.XT_SITE, "1234"); 
     		
-    		/**
-    		 * Set mandatory "xtsite" param (provided by Xiti) for the whole application
-    		 * This value can be overridden as an Application defaults configuration or as a @Xiti annotation attribute
-    		 * */  
-    		configuration.add(XitiConstants.XT_SITE, "1234"); 
-    		
-    		/**
-    		 * Set mandatory "xtsd" param (provided by Xiti) for the whole application
-    		 * This value can be overridden as an Application defaults configuration or as a @Xiti annotation attribute
-    		 * */  
-    		configuration.add(XitiConstants.XT_SD, "5678"); 
-    }
+			/**
+		 	 * Set mandatory "xtsd" param (provided by Xiti) for the whole application
+		 	 * This value can be overridden as an Application defaults configuration or as a @Xiti annotation attribute
+		 	* */  
+			configuration.add(XitiConstants.XT_SD, "5678"); 
+		}
 
 Note : Some Xiti parameters (_xt\_site_, _xt\_sd_ and _xt\_nv_) can be overridden by the @Xiti annotation attributes on a page level, if provided (See "Xiti annotation" section)
 
