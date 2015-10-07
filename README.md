@@ -26,12 +26,9 @@ Set the module parameters provided by Xiti in your AppModule :
 - XitiConstants.XT_SD : _xt\_sd_ the Xiti sub-domain (provided by Xiti)
 - XITI_ENABLE_SCRIPT_AUTOLOAD : enable/disable Xiti script auto-load. By defaut, true : the script is loaded for all pages (annotated or not  with @Xiti annotation). If you set it to false, only annotated pages will load the Xiti script 
  
- For instance, if you put the _xtcore.js_ in _src/main/webapp/static/js_ : 
-
-	@Contribute(SymbolProvider.class)
-	@ApplicationDefaults
-	public static void contributeSymboleProvider(MappedConfiguration<String, String> configuration)
-	{
+		@Contribute(SymbolProvider.class)
+		@ApplicationDefaults
+		public static void contributeSymboleProvider(MappedConfiguration<String, String> configuration){
 		/**
 		 * Set the xtcore.js path. 
 		 * If xtcore.js is under src/main/webapp/static/js, should be something like "context:static/js/xtcore.js"
